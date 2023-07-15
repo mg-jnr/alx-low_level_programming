@@ -11,11 +11,11 @@ int main(void)
 	{
 		if (hex < 10)
 		{
-			putchar (hex + '0')
+			putchar (hex + '0');
 		}
 		else if ( hex >= 10)
 		{
-			putchar (hex + 87)
+			putchar (hex + 87);
 		}
 	}
 putchar('\n');
