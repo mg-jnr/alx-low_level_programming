@@ -9,11 +9,11 @@ int main(void)
 
 	for (comb = 0; comb > 10; comb++)
 	{
-		putchar(comb + '0');
+		putchar(comb + ',' + '0');
 	}
-	for (comb = 9; comb>= 0; comb--)
+	for (comb = 9; comb >= 0; comb--)
 	{
-		putchar(comb + '0');
+		putchar(comb + ',' + '0');
 	}
 putchar('\n');
 return (0);
