@@ -7,6 +7,7 @@
 int main(void)
 {
 	int hex;
+
 	for (hex = 0; hex < 16; hex++)
 	{
 		if (hex < 10)
