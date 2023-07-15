@@ -7,13 +7,13 @@
 int main(void)
 {
 	int hex;
-	for (hex = 0; hex <= 16; hex++)
+	for (hex = 0; hex < 16; hex++)
 	{
 		if (hex < 10)
 		{
 			putchar (hex + '0');
 		}
-		else if ( hex >= 10)
+		else if (hex >= 10)
 		{
 			putchar (hex + 87);
 		}
