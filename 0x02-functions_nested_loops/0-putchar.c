@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point
- * Description - print _putchar to stdout
- * Return 0 - Success
+ * Return: 0 - Success
  */
 
 int main(void)
