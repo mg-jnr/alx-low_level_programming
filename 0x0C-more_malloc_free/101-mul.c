@@ -1,12 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-
 /**
- * is_digit - checks if a string contains a non-digit char
- * @s: string to be evaluated
+ * is_digit - Checks if a string contains a non-digit Character.
+ * @s: string to be Evaluated.
  *
- * Return: 0 if a non-digit is found, 1 otherwise
+ * Return: 0 if a non-digit is found, 1 otherwise (True).
  */
 int is_digit(char *s)
 {
@@ -22,10 +21,10 @@ int is_digit(char *s)
 }
 
 /**
- * _strlen - returns the length of a string
- * @s: string to evaluate
+ * _strlen - returns the length of a string in decimal figures
+ * @s: string to be Evaluated.
  *
- * Return: the length of the string
+ * Return: the length of the String.
  */
 int _strlen(char *s)
 {
@@ -39,7 +38,7 @@ int _strlen(char *s)
 }
 
 /**
- * errors - handles errors for main
+ * errors - handles errors for the header main
  */
 void errors(void)
 {
@@ -48,11 +47,11 @@ void errors(void)
 }
 
 /**
- * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - multiplies two Positive Numbers (+)
+ * @argc: number of Arguments.
+ * @argv: array of Arguments.
  *
- * Return: always 0 (Success)
+ * Return: always 0 (Success).
  */
 int main(int argc, char *argv[])
 {
