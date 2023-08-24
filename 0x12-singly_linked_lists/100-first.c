@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 void first(void) __attribute__ ((constructor));
-
 /**
-  * first - ...
+  * first - ... (DSA)
   *
-  * Return: Nothing.
+  * Return: Nothing, abs.
   */
 void first(void)
 {
