@@ -1,1 +1,1 @@
-This is a repositorydedicated to learning of C Language
+This is a repository dedicated to learning of C Language
