@@ -8,16 +8,16 @@
 
 size_t dlistint_len(const dlistint_t *h)
 {
-        const dlistint_t *current = h;
-        int i = 0;
+	const dlistint_t *current = h;
+	int i = 0;
 
-        while (current)
-        {
-                i++;
-                current = current->next;
-        }
+	while (current)
+	{
+		i++;
+		current = current->next;
+	}
 
-        return (i);
+	return (i);
 }
 
 /**
@@ -30,41 +30,41 @@ size_t dlistint_len(const dlistint_t *h)
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-        dlistint_t *current, *tmp, *new_node;
-        unsigned int i;
+	dlistint_t *current, *tmp, *new_node;
+	unsigned int i;
 	size_t len;
 
-        new_node = malloc(sizeof(dlistint_t));
-        if (new_node == NULL)
-                return (NULL);
-        new_node->n = n;
-        current = *h;
-        len = dlistint_len(*h);
-        for (i = 0; i < idx; i++)
-        {
-                if (idx > len + 1)
-                        return (NULL);
-                if (i > 0)
-                {
-                        if (current->next == NULL)
-                                break;
-                        current = current->next;
-                }
-        }
-        if (idx == 0)
-                new_node = add_dnodeint(h, n);
-        else
-        {
-                if (current && !current->next)
-                        new_node = add_dnodeint_end(h, n);
-                else
-                {
-                        tmp = current->next;
-                        new_node->next = tmp;
-                        new_node->prev = current;
-                        current->next = new_node;
-                        tmp->prev = new_node;
+	new_node = malloc(sizeof(dlistint_t));
+	if (new_node == NULL)
+		return (NULL);
+	new_node->n = n;
+	current = *h;
+	len = dlistint_len(*h);
+	for (i = 0; i < idx; i++)
+	{
+		if (idx > len + 1)
+			return (NULL);
+		if (i > 0)
+		{
+			if (current->next == NULL)
+				break;
+			current = current->next;
 		}
-        }
-        return (new_node);
+	}
+	if (idx == 0)
+		new_node = add_dnodeint(h, n);
+	else
+	{
+		if (current && !current->next)
+			new_node = add_dnodeint_end(h, n);
+		else
+		{
+			tmp = current->next;
+			new_node->next = tmp;
+			new_node->prev = current;
+			current->next = new_node;
+			tmp->prev = new_node;
+		}
+	}
+	return (new_node);
 }
